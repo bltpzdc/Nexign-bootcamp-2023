@@ -1,2 +1,7 @@
-package callFactory;public interface CallFactory {
+package callFactory;
+
+import tools.data.Call;
+
+public interface CallFactory {
+    Call createCall(String[] fields);
 }
