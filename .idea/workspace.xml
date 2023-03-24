@@ -1,14 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b2efe2f-3595-4267-a395-4319e145db47" name="Changes" comment="" />
+    <list default="true" id="6b2efe2f-3595-4267-a395-4319e145db47" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/billCreator/BillCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/billCreator/BillCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/billCreator/BillCreatorV1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/billCreator/BillCreatorV1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/billPrinter/BillPrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/billPrinter/BillPrinter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/billPrinter/BillPrinterV1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/billPrinter/BillPrinterV1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fileReader/CDRFileReaderV1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fileReader/CDRFileReaderV1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fileReader/FileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fileReader/FileReader.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2NPYXDM0ix0E2Rre3SdjQJGvXpA" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -16,13 +40,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Test-task-Nexine" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -31,7 +66,42 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679567223670</updated>
+      <workItem from="1679567225306" duration="4236000" />
+      <workItem from="1679571478111" duration="403000" />
+      <workItem from="1679571894075" duration="7993000" />
+      <workItem from="1679593993701" duration="3039000" />
+      <workItem from="1679647890319" duration="14316000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/billCreator/BillCreatorV1.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/billCreator/BillCreatorV1.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
