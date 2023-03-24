@@ -5,9 +5,8 @@ import lombok.ToString;
 import tools.data.Call;
 import tools.data.PhoneNumber;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
+
 @ToString
 public class NumberStorageV1 implements NumberStorage{
     @Getter
@@ -31,5 +30,15 @@ public class NumberStorageV1 implements NumberStorage{
         List<Call> calls = storage.get(number);
         calls.add(call);
         storage.put(number, calls);
+    }
+
+    @Override
+    public Set<PhoneNumber> getNumbers(){
+        return storage.keySet();
+    }
+
+    @Override
+    public List<Call> getCalls(PhoneNumber number) {
+        return storage.get(number);
     }
 }

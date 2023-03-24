@@ -18,8 +18,8 @@ public class CallFactoryV1 implements CallFactory{
         LocalDateTime startTime = toLocalDate(fields[2]);
         LocalDateTime endTime = toLocalDate(fields[3]);
         Duration duration = Duration.between(startTime, endTime);
-        call.setStartTime(toStringDate(startTime));
-        call.setEndTime(toStringDate(endTime));
+        call.setStartTime(startTime);
+        call.setEndTime(endTime);
         call.setDuration(formatDuration(duration));
         double costPerMinute = getCostPerMinute(Integer.parseInt(fields[4]));
         call.setCost(((duration.getSeconds() / 60) + 1)*costPerMinute);
