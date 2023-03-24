@@ -13,7 +13,6 @@ public class CallFactoryV1 implements CallFactory{
     private DateTimeFormatter formatterToStringDate = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
     @Override
     public Call createCall(String[] fields) {
-        //String[] fields = input.trim().split(", +");
         Call call = new Call();
         call.setType(Integer.parseInt(fields[0]));
         LocalDateTime startTime = toLocalDate(fields[2]);
@@ -22,7 +21,8 @@ public class CallFactoryV1 implements CallFactory{
         call.setStartTime(toStringDate(startTime));
         call.setEndTime(toStringDate(endTime));
         call.setDuration(formatDuration(duration));
-        call.setCost((duration.getSeconds() / 60) + 1);
+        double costPerMinute = getCostPerMinute(Integer.parseInt(fields[4]));
+        call.setCost(((duration.getSeconds() / 60) + 1)*costPerMinute);
         return call;
     }
 
@@ -40,5 +40,13 @@ public class CallFactoryV1 implements CallFactory{
         long MM = (seconds % 3600) / 60;
         long SS = seconds % 60;
         return String.format("%02d:%02d:%02d", HH, MM, SS);
+    }
+
+    private double getCostPerMinute(int tariff){
+        switch (tariff){
+            case 3, 11 -> {return 1.5;}
+            case 6 -> {return 1;}
+            default -> {return 0;}
+        }
     }
 }
