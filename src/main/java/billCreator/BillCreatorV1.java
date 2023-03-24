@@ -1,5 +1,7 @@
 package billCreator;
 
+import billPrinter.BillPrinter;
+import billPrinter.BillPrinterV1;
 import tools.data.Call;
 import tools.data.PhoneNumber;
 import tools.numberStorage.NumberStorage;
@@ -18,12 +20,17 @@ import java.util.List;
 public class BillCreatorV1 implements BillCreator{
     private final String LINE = "----------------------------------------------------------------------------\n";
     private final DateTimeFormatter formatter = DateTimeFormatter.ofPattern(" yyyy-MM-dd HH:mm:ss ");
+    private final BillPrinter billPrinter;
+
+    public BillCreatorV1(BillPrinter billPrinter){
+        this.billPrinter = billPrinter;
+    }
 
     @Override
     public void createBills(NumberStorage storage) throws IOException {
         String bill = "";
         for (PhoneNumber i : storage.getNumbers()){
-            if (i.getTariff() != 3) continue;
+            if (i.getTariff() != 11) continue;
             /*if (counter == 0){
                 counter++;
                 continue;
@@ -38,7 +45,7 @@ public class BillCreatorV1 implements BillCreator{
             }
             if (i.getTariff() == 6) price += 100;
             bill += createFooter(price);
-            Files.write(Paths.get("reports/report_" + i.getNumber()), bill.getBytes());
+            billPrinter.printBill(i.getNumber(), bill);
             break;
         }
     }
