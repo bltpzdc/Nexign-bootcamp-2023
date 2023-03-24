@@ -27,14 +27,9 @@ public class BillCreatorV1 implements BillCreator{
     }
 
     @Override
-    public void createBills(NumberStorage storage) throws IOException {
-        String bill = "";
+    public void createBills(NumberStorage storage){
         for (PhoneNumber i : storage.getNumbers()){
-            if (i.getTariff() != 11) continue;
-            /*if (counter == 0){
-                counter++;
-                continue;
-            }*/
+            String bill = "";
             bill += createHeader(i);
             List<Call> calls = storage.getCalls(i);
             Collections.sort(calls);
@@ -46,7 +41,6 @@ public class BillCreatorV1 implements BillCreator{
             if (i.getTariff() == 6) price += 100;
             bill += createFooter(price);
             billPrinter.printBill(i.getNumber(), bill);
-            break;
         }
     }
 
@@ -89,7 +83,6 @@ public class BillCreatorV1 implements BillCreator{
                 if (tariffMinutes >= minutes){
                     tariffMinutes -= minutes;
                     number.setTariffMinutes((int) tariffMinutes);
-                    System.out.println(number.getTariffMinutes());
                     return 0;
                 } else {
                     double expensiveMinutes = minutes - tariffMinutes;
