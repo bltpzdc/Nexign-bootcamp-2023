@@ -13,13 +13,13 @@ public class CDRFileReaderV1 implements FileReader{
     public CDRFileReaderV1(String fileName){
         this.fileName = fileName;
     }
-
+    @Override
     public boolean init(){
         try {
             inputStream = this.getClass().getClassLoader().getResourceAsStream(fileName);
             reader = new BufferedReader(new InputStreamReader(inputStream));
         } catch (NullPointerException e){
-            System.err.println("No such file.");
+            System.err.println("Can't find \"cdr.txt\" in resources.");
             return false;
         }
         return true;
