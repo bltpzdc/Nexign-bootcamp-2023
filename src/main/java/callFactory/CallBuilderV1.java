@@ -5,10 +5,8 @@ import tools.data.Call;
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Arrays;
-import java.util.Date;
 
-public class CallFactoryV1 implements CallFactory{
+public class CallBuilderV1 implements CallBuilder {
     private DateTimeFormatter formatterToLocalDate = DateTimeFormatter.ofPattern("yyyyMMddHHmmss");
     private DateTimeFormatter formatterToStringDate = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
     @Override

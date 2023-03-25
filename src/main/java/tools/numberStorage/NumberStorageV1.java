@@ -1,15 +1,11 @@
 package tools.numberStorage;
 
-import lombok.Getter;
-import lombok.ToString;
 import tools.data.Call;
 import tools.data.PhoneNumber;
 
 import java.util.*;
 
-@ToString
 public class NumberStorageV1 implements NumberStorage{
-    @Getter
     private Map<PhoneNumber, List<Call>> storage;
 
     public NumberStorageV1(){

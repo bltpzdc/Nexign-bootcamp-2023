@@ -2,7 +2,7 @@ package phoneNumberFactory;
 
 import tools.data.PhoneNumber;
 
-public class PhoneNumberFactoryV1 implements PhoneNumberFactory {
+public class PhoneNumberBuilderV1 implements PhoneNumberBuilder {
     @Override
     public PhoneNumber createPhoneNumber(String[] fields) {
         PhoneNumber number = new PhoneNumber();

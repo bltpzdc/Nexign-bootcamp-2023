@@ -1,30 +1,27 @@
 package applicationManager;
 
 import billCreator.BillCreator;
-import billCreator.BillCreatorV1;
-import callFactory.CallFactory;
-import callFactory.CallFactoryV1;
+import callFactory.CallBuilder;
 import fileReader.FileReader;
-import phoneNumberFactory.PhoneNumberFactory;
+import phoneNumberFactory.PhoneNumberBuilder;
 import tools.data.Call;
 import tools.data.PhoneNumber;
 import tools.numberStorage.NumberStorage;
-import tools.numberStorage.NumberStorageV1;
 
 import java.io.IOException;
 import java.util.*;
 
 public class ApplicationManager {
     private final FileReader reader;
-    private final CallFactory callFactory;
-    private final PhoneNumberFactory numberFactory;
+    private final CallBuilder callBuilder;
+    private final PhoneNumberBuilder numberBuilder;
     private final NumberStorage numberStorage;
     private final BillCreator billCreator;
     private Map<PhoneNumber, Integer> minutesStorage;
-    public ApplicationManager(FileReader reader, CallFactory callFactory, PhoneNumberFactory numberFactory, NumberStorage numberStorage, BillCreator billCreator){
+    public ApplicationManager(FileReader reader, CallBuilder callBuilder, PhoneNumberBuilder numberBuilder, NumberStorage numberStorage, BillCreator billCreator){
         this.reader = reader;
-        this.callFactory = callFactory;
-        this.numberFactory = numberFactory;
+        this.callBuilder = callBuilder;
+        this.numberBuilder = numberBuilder;
         this.numberStorage = numberStorage;
         this.billCreator = billCreator;
         minutesStorage = new HashMap<>();
@@ -36,8 +33,8 @@ public class ApplicationManager {
         try {
             while ((buffer = reader.nextLine()) != null) {
                 String[] data = buffer.trim().split(", ");
-                PhoneNumber number = numberFactory.createPhoneNumber(data);
-                Call call = callFactory.createCall(data);
+                PhoneNumber number = numberBuilder.createPhoneNumber(data);
+                Call call = callBuilder.createCall(data);
                 if (numberStorage.containsNumber(number)) numberStorage.addCall(number, call);
                 else {
                     List<Call> calls = new ArrayList<>();
@@ -45,8 +42,9 @@ public class ApplicationManager {
                     numberStorage.putNumber(number, calls);
                 }
             }
+            reader.close();
         } catch (IOException e){
-            System.err.println("Error occurred while reading CDR file.");
+            System.err.println("Error occurred while reading or closing CDR file.");
             return;
         }
         billCreator.createBills(numberStorage);

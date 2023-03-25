@@ -2,6 +2,6 @@ package callFactory;
 
 import tools.data.Call;
 
-public interface CallFactory {
+public interface CallBuilder {
     Call createCall(String[] fields);
 }

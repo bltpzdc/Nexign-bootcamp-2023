@@ -1,18 +1,35 @@
 package tools.data;
 
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
-
 import java.util.Objects;
 
-@Getter
-@Setter
-@ToString
 public class PhoneNumber {
     private String number;
     private int tariff;
     private int tariffMinutes;
+
+    public String getNumber() {
+        return number;
+    }
+
+    public int getTariff() {
+        return tariff;
+    }
+
+    public int getTariffMinutes() {
+        return tariffMinutes;
+    }
+
+    public void setNumber(String number) {
+        this.number = number;
+    }
+
+    public void setTariff(int tariff) {
+        this.tariff = tariff;
+    }
+
+    public void setTariffMinutes(int tariffMinutes) {
+        this.tariffMinutes = tariffMinutes;
+    }
 
     @Override
     public boolean equals(Object o) {
