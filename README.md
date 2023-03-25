@@ -9,6 +9,6 @@ ___
 
 При создании проекта использовались средства стандартной библиотеки JDK 11. Система сборки - Maven.
 ___
-[Текст](https://github.com/bltpzdc/Test-task-NexignBootcamp/blob/main/src/main/resources/task.txt) задания.   
-Исходный [CDR - файл](https://github.com/bltpzdc/Test-task-NexignBootcamp/blob/main/src/main/resources/cdr.txt) с информацией о звонках.  
-Пример [отчета](https://github.com/bltpzdc/Test-task-NexignBootcamp/blob/main/src/main/resources/report_example.txt) для абонента.  
+[Текст](https://github.com/bltpzdc/Nexign-bootcamp-2023/blob/main/src/main/resources/task.txt) задания.   
+Исходный [CDR - файл](https://github.com/bltpzdc/Nexign-bootcamp-2023/blob/main/src/main/resources/cdr.txt) с информацией о звонках.  
+Пример [отчета](https://github.com/bltpzdc/Nexign-bootcamp-2023/blob/main/src/main/resources/report_example.txt) для абонента.  
