@@ -3,19 +3,21 @@ import billCreator.BillCreator;
 import billCreator.BillCreatorV1;
 import billPrinter.BillPrinter;
 import billPrinter.BillPrinterV1;
-import callFactory.CallBuilder;
-import callFactory.CallBuilderV1;
+import callBuilder.CallBuilder;
+import callBuilder.CallBuilderV1;
 import fileReader.CDRFileReaderV1;
 import fileReader.FileReader;
-import phoneNumberFactory.PhoneNumberBuilder;
-import phoneNumberFactory.PhoneNumberBuilderV1;
+import phoneNumberBuilder.PhoneNumberBuilder;
+import phoneNumberBuilder.PhoneNumberBuilderV1;
 import tools.numberStorage.NumberStorage;
 import tools.numberStorage.NumberStorageV1;
 
 import java.io.IOException;
+import java.util.Locale;
 
 public class Main {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args){
+        Locale.setDefault(new Locale("US"));
         FileReader reader = new CDRFileReaderV1("cdr.txt");
         CallBuilder callBuilder = new CallBuilderV1();
         PhoneNumberBuilder numberBuilder = new PhoneNumberBuilderV1();
