@@ -1,4 +1,4 @@
-package phoneNumberBuilder;
+package builders.phoneNumberBuilder;
 
 import tools.data.PhoneNumber;
 

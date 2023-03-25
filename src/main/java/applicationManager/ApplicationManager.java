@@ -1,9 +1,9 @@
 package applicationManager;
 
 import billCreator.BillCreator;
-import callBuilder.CallBuilder;
+import builders.callBuilder.CallBuilder;
 import fileReader.FileReader;
-import phoneNumberBuilder.PhoneNumberBuilder;
+import builders.phoneNumberBuilder.PhoneNumberBuilder;
 import tools.data.Call;
 import tools.data.PhoneNumber;
 import tools.numberStorage.NumberStorage;

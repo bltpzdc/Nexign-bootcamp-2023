@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b2efe2f-3595-4267-a395-4319e145db47" name="Changes" comment="" />
+    <list default="true" id="6b2efe2f-3595-4267-a395-4319e145db47" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/billCreator/BillCreatorV1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/billCreator/BillCreatorV1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/callBuilder/CallBuilderV1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/callBuilder/CallBuilderV1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/phoneNumberBuilder/PhoneNumberBuilderV1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/phoneNumberBuilder/PhoneNumberBuilderV1.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,7 +71,7 @@
       <workItem from="1679593993701" duration="3039000" />
       <workItem from="1679647890319" duration="16018000" />
       <workItem from="1679680111666" duration="3817000" />
-      <workItem from="1679744616987" duration="1716000" />
+      <workItem from="1679744616987" duration="2118000" />
     </task>
     <servers />
   </component>
