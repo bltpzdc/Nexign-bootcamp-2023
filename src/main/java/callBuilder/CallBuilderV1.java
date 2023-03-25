@@ -42,9 +42,10 @@ public class CallBuilderV1 implements CallBuilder {
 
     private double getCostPerMinute(int tariff){
         switch (tariff){
-            case 3, 11 -> {return 1.5;}
-            case 6 -> {return 1;}
-            default -> {return 0;}
+            case 3 : {return 1.5;}
+            case 6 : {return 1;}
+            case 11 : {return 1.5;}
+            default : {return 0;}
         }
     }
 }

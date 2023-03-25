@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b2efe2f-3595-4267-a395-4319e145db47" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="6b2efe2f-3595-4267-a395-4319e145db47" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,6 +42,8 @@
 }</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="$USER_HOME$/.jdks/corretto-11.0.18" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Test-task-Nexine" />
       <method v="2">
@@ -65,7 +65,7 @@
       <workItem from="1679593993701" duration="3039000" />
       <workItem from="1679647890319" duration="16018000" />
       <workItem from="1679680111666" duration="3817000" />
-      <workItem from="1679744616987" duration="947000" />
+      <workItem from="1679744616987" duration="1716000" />
     </task>
     <servers />
   </component>

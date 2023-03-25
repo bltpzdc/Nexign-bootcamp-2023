@@ -73,10 +73,10 @@ public class BillCreatorV1 implements BillCreator{
 
     private double countPrice(PhoneNumber number, Call call){
         switch (number.getTariff()){
-            case 3 -> {
+            case 3 : {
                 return call.getCost();
             }
-            case 6 -> {
+            case 6 : {
                 if (number.getTariffMinutes() == 0) return call.getCost();
                 double minutes = call.getCost();
                 double tariffMinutes = number.getTariffMinutes();
@@ -90,7 +90,7 @@ public class BillCreatorV1 implements BillCreator{
                     return expensiveMinutes;
                 }
             }
-            case 11 -> {
+            case 11 : {
                 if (call.getType() == 2) return 0;
                 if (number.getTariffMinutes() == 0) return call.getCost();
                 double minutes = call.getCost()/1.5;
@@ -106,7 +106,7 @@ public class BillCreatorV1 implements BillCreator{
                     return minutes*0.5 + expensiveMinutes*1.5;
                 }
             }
-            default -> {return 0;}
+            default : {return 0;}
         }
     }
 

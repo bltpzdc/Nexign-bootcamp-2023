@@ -14,16 +14,16 @@ public class PhoneNumberBuilderV1 implements PhoneNumberBuilder {
 
     private int tariffMinutes(int tariff){
         switch (tariff){
-            case 3 -> {
+            case 3 : {
                 return 0;
             }
-            case 6 -> {
+            case 6 : {
                 return 300;
             }
-            case 11 -> {
+            case 11 : {
                 return 100;
             }
-            default -> {
+            default : {
                 return 1;
             }
         }
